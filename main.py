@@ -14,6 +14,7 @@ ESTADOS = [
     "🧠 Preparando simulacros de parcial",
     "💬 Usá /preguntarle para consultar dudas",
     "🎯 Usá /quiz para practicar",
+    "🤖 Botardito activo para el CBC",
 ]
 
 intents = discord.Intents.default()
@@ -41,7 +42,7 @@ async def load_cogs():
         except Exception as error:
             print(f"✗ Error cargando {filename}: {error}")
 
-@tasks.loop(seconds=60)
+@tasks.loop(minutes=2)
 async def cambiar_estado():
     estado = random.choice(ESTADOS)
 
@@ -55,8 +56,14 @@ async def on_ready():
 
     await load_cogs()
 
-    synced = await bot.tree.sync()
-    print(f"✓ {len(synced)} comandos globales sincronizados\n")
+    if not cambiar_estado.is_running():
+        cambiar_estado.start()
+
+    try:
+        synced = await bot.tree.sync()
+        print(f"{len(synced)} comandos sincronizados")
+    except Exception as error:
+        print(f"Error sincronizando comandos: {error}")
 
 
 if not TOKEN:
