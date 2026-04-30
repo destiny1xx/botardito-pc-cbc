@@ -22,7 +22,7 @@ Botardito incluye comandos para:
 |---|---|
 | `/ayuda` | Muestra todos los comandos disponibles. |
 | `/fechas` | Muestra fechas importantes del curso. |
-| `/temario` | Muestra el cronograma semanal de la cursada. |
+| `/calendario` | Muestra el cronograma semanal de la cursada. |
 | `/repasar` | Recomienda qué estudiar según la semana actual. |
 | `/recursos` | Muestra recursos útiles de la materia. |
 | `/faq` | Muestra preguntas frecuentes. |
@@ -91,57 +91,6 @@ Para usar el bot necesitás tener instalado:
 - el token del bot;
 - el bot invitado a tu servidor con permisos para usar comandos slash.
 - y una API key para interactuar con el comando /preguntarle
-
-## Instalación
-
-Primero cloná el repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/botardito.git
-cd botardito
-```
-
-Creá un entorno virtual:
-
-```bash
-python -m venv venv
-```
-
-Activá el entorno virtual.
-
-En Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-En Linux o macOS:
-
-```bash
-source venv/bin/activate
-```
-
-Instalá las dependencias:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Configuración
-
-Creá un archivo `.env` en la raíz del proyecto.
-
-Podés usar como base el archivo `.env.example`.
-
-## Cómo ejecutar el bot
-
-Con el entorno virtual activado, ejecutá:
-
-```bash
-python main.py
-```
-
-Si todo está bien configurado, la consola debería mostrar que el bot se conectó correctamente y que los comandos slash fueron sincronizados.
 
 ## Estado del proyecto
 
