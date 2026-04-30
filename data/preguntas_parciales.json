@@ -1,0 +1,363 @@
+[
+  {
+    "parcial": "primer_parcial",
+    "tema": "variables",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nx = 4\ny = x\nx = x + 3\nprint(y)",
+    "opciones": ["4", "7", "3", "Da error"],
+    "correcta": 0,
+    "explicacion": "La variable y guarda el valor que tenía x en ese momento, que era 4. Después x cambia a 7, pero y sigue valiendo 4."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "tipos_de_datos",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es el tipo de dato de la expresión 5 / 2 en Python?",
+    "opciones": ["int", "float", "str", "bool"],
+    "correcta": 1,
+    "explicacion": "En Python, el operador / siempre devuelve un número decimal, aunque la división dé exacta. Por eso 5 / 2 devuelve un float."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "tipos_de_datos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nprint(type('5' * 2))",
+    "opciones": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "Da error"],
+    "correcta": 2,
+    "explicacion": "El valor '5' es un string. Al multiplicarlo por 2, Python repite el texto y obtiene '55'. Sigue siendo un string."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "funciones",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\ndef doble(x):\n    return x * 2\n\nprint(doble(3) + doble(2))",
+    "opciones": ["5", "10", "12", "Da error"],
+    "correcta": 1,
+    "explicacion": "doble(3) devuelve 6 y doble(2) devuelve 4. Después se suman: 6 + 4 = 10."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "funciones",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué ocurre si una función no tiene return explícito?",
+    "opciones": ["Devuelve 0", "Devuelve False", "Devuelve None", "Da siempre error"],
+    "correcta": 2,
+    "explicacion": "Cuando una función termina sin ejecutar un return, Python devuelve automáticamente None."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "funciones",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\ndef f(x):\n    x = x + 1\n    return x\n\nx = 5\nprint(f(x))\nprint(x)",
+    "opciones": ["6 y luego 6", "6 y luego 5", "5 y luego 6", "Da error"],
+    "correcta": 1,
+    "explicacion": "Dentro de la función, x vale 5 y se le suma 1, entonces devuelve 6. Pero la x de afuera no cambia, por eso después imprime 5."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "condicionales",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nx = 0\nif x:\n    print('A')\nelse:\n    print('B')",
+    "opciones": ["A", "B", "0", "Da error"],
+    "correcta": 1,
+    "explicacion": "En Python, el número 0 se interpreta como False en un if. Por eso entra al else e imprime B."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "condicionales",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nx = 10\nif x > 5 and x < 10:\n    print('A')\nelse:\n    print('B')",
+    "opciones": ["A", "B", "True", "Da error"],
+    "correcta": 1,
+    "explicacion": "x > 5 es True, pero x < 10 es False porque x vale exactamente 10. Con and, ambas condiciones deben ser verdaderas. Por eso imprime B."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "ciclos",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuántas veces se ejecuta el cuerpo del while?\n\ni = 1\nwhile i < 20:\n    i = i * 2",
+    "opciones": ["3", "4", "5", "Infinitas veces"],
+    "correcta": 2,
+    "explicacion": "Los valores de i van siendo 1, 2, 4, 8 y 16 al entrar al while. En cada vuelta se duplica. Cuando llega a 32, la condición i < 20 deja de cumplirse. Se ejecuta 5 veces."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "ciclos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nfor i in range(2, 8, 2):\n    print(i)",
+    "opciones": ["2 4 6", "2 4 6 8", "4 6 8", "Da error"],
+    "correcta": 0,
+    "explicacion": "range(2, 8, 2) empieza en 2, avanza de 2 en 2 y se detiene antes de llegar a 8. Por eso imprime 2, 4 y 6."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "ciclos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nx = 0\nfor i in range(4):\n    x = x + i\nprint(x)",
+    "opciones": ["4", "6", "10", "3"],
+    "correcta": 1,
+    "explicacion": "range(4) genera 0, 1, 2 y 3. Se suman esos valores: 0 + 1 + 2 + 3 = 6."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "rangos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué lista se obtiene con list(range(10, 2, -3))?",
+    "opciones": ["[10, 7, 4]", "[10, 7, 4, 1]", "[10, 8, 6, 4]", "[7, 4]"],
+    "correcta": 0,
+    "explicacion": "El rango empieza en 10 y resta 3 cada vez: 10, 7, 4. El siguiente sería 1, pero no entra porque el límite es 2 y el rango se detiene antes de pasarse."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "strings",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué devuelve la expresión 'Python'[1:5:2]?",
+    "opciones": ["'yh'", "'yt'", "'Pto'", "'tho'"],
+    "correcta": 0,
+    "explicacion": "El slicing va desde el índice 1 hasta antes del 5, saltando de 2 en 2. En 'Python', toma los caracteres en posiciones 1 y 3: 'y' y 'h'."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "strings",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\ns = 'programar'\nprint(s[-1])",
+    "opciones": ["p", "r", "a", "Da error"],
+    "correcta": 1,
+    "explicacion": "El índice -1 accede al último carácter de un string. En 'programar', el último carácter es 'r'."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "strings",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\ns = 'hola'\ns.upper()\nprint(s)",
+    "opciones": ["HOLA", "hola", "Hola", "Da error"],
+    "correcta": 1,
+    "explicacion": "Los strings son inmutables. s.upper() devuelve una nueva cadena en mayúsculas, pero no modifica s si no guardás el resultado."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "tuplas",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál de estas afirmaciones sobre tuplas es correcta?",
+    "opciones": ["Una tupla no puede contener listas", "Una tupla puede modificarse con append", "Una tupla es inmutable, pero puede contener objetos mutables", "Una tupla siempre tiene exactamente dos elementos"],
+    "correcta": 2,
+    "explicacion": "Una tupla no permite cambiar sus posiciones, pero puede contener objetos mutables, como listas. Lo inmutable es la estructura de la tupla, no necesariamente todo lo que contiene."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "listas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nxs = [1, 2, 3]\nys = xs\nys.append(4)\nprint(xs)",
+    "opciones": ["[1, 2, 3]", "[1, 2, 3, 4]", "[4, 1, 2, 3]", "Da error"],
+    "correcta": 1,
+    "explicacion": "xs e ys apuntan a la misma lista. Cuando se hace ys.append(4), se modifica esa lista compartida. Por eso xs también muestra el 4."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "listas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué valor queda en lista?\n\nlista = [1, 2, 3, 4]\nlista = lista[1:3]\nlista.append(9)",
+    "opciones": ["[1, 2, 3, 4, 9]", "[2, 3, 9]", "[1, 3, 9]", "[2, 3]"],
+    "correcta": 1,
+    "explicacion": "lista[1:3] toma los elementos en las posiciones 1 y 2: [2, 3]. Después append(9) agrega el 9 al final."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "listas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nlista = [10, 20, 30]\nprint(lista[1])",
+    "opciones": ["10", "20", "30", "Da error"],
+    "correcta": 1,
+    "explicacion": "Las listas empiezan en índice 0. lista[0] es 10, lista[1] es 20 y lista[2] es 30."
+  },
+  {
+    "parcial": "primer_parcial",
+    "tema": "listas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nlista = [1, 2, 3]\nlista[0] = lista[2]\nprint(lista)",
+    "opciones": ["[1, 2, 3]", "[3, 2, 3]", "[1, 2, 1]", "Da error"],
+    "correcta": 1,
+    "explicacion": "lista[2] vale 3. Entonces se reemplaza el elemento en la posición 0 por 3. La lista queda [3, 2, 3]."
+  },
+
+  {
+    "parcial": "segundo_parcial",
+    "tema": "diccionarios",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nd = {'a': 1, 'b': 2}\nd['a'] += d['b']\nprint(d)",
+    "opciones": ["{'a': 1, 'b': 2}", "{'a': 3, 'b': 2}", "{'a': 1, 'b': 3}", "Da error"],
+    "correcta": 1,
+    "explicacion": "d['a'] vale 1 y d['b'] vale 2. La instrucción d['a'] += d['b'] suma 2 al valor de 'a'. Entonces 'a' queda valiendo 3."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "diccionarios",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué excepción aparece al intentar acceder a diccionario['edad'] si la clave no existe?",
+    "opciones": ["IndexError", "KeyError", "NameError", "SyntaxError"],
+    "correcta": 1,
+    "explicacion": "En un diccionario, acceder con corchetes a una clave inexistente produce KeyError. IndexError corresponde a listas, strings o tuplas."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "diccionarios",
+    "dificultad": "dificil",
+    "pregunta": "Dada una lista de diccionarios con notas de alumnos, ¿qué estructura conviene usar para agrupar notas por materia?",
+    "opciones": ["Una lista simple de strings", "Un diccionario donde la clave sea la materia y el valor una lista de notas", "Una tupla con todas las notas mezcladas", "Un string acumulando nombres"],
+    "correcta": 1,
+    "explicacion": "Si querés agrupar datos por una categoría, conviene usar un diccionario. La materia funciona como clave y la lista de notas como valor."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "diccionarios",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nd = {}\nd['x'] = 1\nd['x'] = d['x'] + 4\nprint(d['x'])",
+    "opciones": ["1", "4", "5", "Da error"],
+    "correcta": 2,
+    "explicacion": "Primero se crea la clave 'x' con valor 1. Después se actualiza sumándole 4. Entonces d['x'] queda valiendo 5."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "diccionarios",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué devuelve d.get('x', 0) si la clave 'x' no existe en el diccionario d?",
+    "opciones": ["None siempre", "0", "Da KeyError", "'x'"],
+    "correcta": 1,
+    "explicacion": "El método get permite indicar un valor por defecto. Si 'x' no existe, devuelve 0 en vez de tirar KeyError."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "archivos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué problema puede aparecer si abrís un archivo con open('datos.txt') sin usar with?",
+    "opciones": ["Python no permite leer archivos sin with", "El archivo podría no cerrarse correctamente si ocurre un error", "El archivo se borra automáticamente", "Solo se puede leer la primera línea"],
+    "correcta": 1,
+    "explicacion": "Usar with asegura que el archivo se cierre correctamente al terminar, incluso si ocurre un error dentro del bloque."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "archivos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué modo de apertura permite escribir en un archivo borrando su contenido anterior?",
+    "opciones": ["'r'", "'a'", "'w'", "'x'"],
+    "correcta": 2,
+    "explicacion": "El modo 'w' abre el archivo para escritura y borra el contenido anterior. El modo 'a' agrega al final sin borrar."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "archivos",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué hace archivo.readlines()?",
+    "opciones": ["Lee una sola línea", "Lee todas las líneas y las devuelve en una lista", "Borra todas las líneas", "Escribe una lista en el archivo"],
+    "correcta": 1,
+    "explicacion": "readlines() lee todas las líneas del archivo y devuelve una lista, donde cada elemento es una línea."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "errores",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué excepción aparece al intentar acceder a lista[10] si la lista tiene 3 elementos?",
+    "opciones": ["TypeError", "ValueError", "IndexError", "KeyError"],
+    "correcta": 2,
+    "explicacion": "Si intentás acceder a una posición que no existe en una lista, Python lanza IndexError."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "errores",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué excepción aparece al intentar convertir int('hola')?",
+    "opciones": ["ValueError", "TypeError", "NameError", "IndexError"],
+    "correcta": 0,
+    "explicacion": "int() puede convertir textos como '123', pero no puede convertir 'hola' porque no representa un número válido. Por eso lanza ValueError."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "errores",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué bloque se ejecuta si ocurre un error dentro del try?",
+    "opciones": ["finally", "except", "else", "def"],
+    "correcta": 1,
+    "explicacion": "Si ocurre una excepción dentro del try y hay un except compatible, se ejecuta el bloque except."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "errores",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\ntry:\n    x = 10 / 0\nexcept ZeroDivisionError:\n    print('error')",
+    "opciones": ["10", "0", "error", "Da error sin controlarlo"],
+    "correcta": 2,
+    "explicacion": "Dividir por cero produce ZeroDivisionError. Como el except captura ese error, se ejecuta print('error')."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "pandas",
+    "dificultad": "dificil",
+    "pregunta": "En pandas, ¿qué devuelve df['nota'].mean()?",
+    "opciones": ["La suma de la columna nota", "El promedio de la columna nota", "La cantidad de filas del DataFrame", "Una nueva columna llamada mean"],
+    "correcta": 1,
+    "explicacion": "df['nota'] selecciona la columna nota. El método mean() calcula el promedio de sus valores."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "pandas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué hace df[df['nota'] >= 7]?",
+    "opciones": ["Ordena el DataFrame por nota", "Filtra las filas donde nota es mayor o igual a 7", "Cambia todas las notas menores a 7", "Devuelve solo la columna nota"],
+    "correcta": 1,
+    "explicacion": "df['nota'] >= 7 genera una condición booleana. Al usarla dentro de df[...], pandas devuelve solo las filas que cumplen esa condición."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "pandas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué representa una columna en un DataFrame de pandas?",
+    "opciones": ["Una Serie", "Un diccionario obligatorio", "Un archivo", "Una función"],
+    "correcta": 0,
+    "explicacion": "En pandas, cada columna de un DataFrame se comporta como una Serie."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "pandas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué hace df.head()?",
+    "opciones": ["Muestra las primeras filas del DataFrame", "Muestra las últimas filas", "Borra las filas vacías", "Calcula el promedio"],
+    "correcta": 0,
+    "explicacion": "df.head() devuelve las primeras filas del DataFrame. Por defecto muestra las primeras 5."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "pandas",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué hace df.groupby('materia')['nota'].mean()?",
+    "opciones": ["Calcula el promedio de nota por materia", "Ordena las materias alfabéticamente únicamente", "Elimina la columna materia", "Convierte nota en string"],
+    "correcta": 0,
+    "explicacion": "groupby('materia') agrupa las filas por materia. Luego ['nota'].mean() calcula el promedio de la nota dentro de cada grupo."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "numpy",
+    "dificultad": "dificil",
+    "pregunta": "¿Cuál es una ventaja principal de usar NumPy frente a listas comunes de Python?",
+    "opciones": ["Permite guardar strings únicamente", "Permite operaciones numéricas vectorizadas más eficientes", "No necesita importar librerías", "Reemplaza completamente a los diccionarios"],
+    "correcta": 1,
+    "explicacion": "NumPy permite trabajar con arreglos numéricos de forma eficiente y hacer operaciones vectorizadas sin recorrer elemento por elemento manualmente."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "numpy",
+    "dificultad": "dificil",
+    "pregunta": "¿Qué imprime este código?\n\nimport numpy as np\na = np.array([1, 2, 3])\nprint(a * 2)",
+    "opciones": ["[1, 2, 3, 1, 2, 3]", "[2 4 6]", "[2, 3, 4]", "Da error"],
+    "correcta": 1,
+    "explicacion": "En NumPy, multiplicar un array por 2 multiplica cada elemento. Por eso [1, 2, 3] pasa a [2, 4, 6]."
+  },
+  {
+    "parcial": "segundo_parcial",
+    "tema": "matplotlib",
+    "dificultad": "dificil",
+    "pregunta": "En Matplotlib, ¿para qué se usa plt.plot(x, y)?",
+    "opciones": ["Para leer un archivo CSV", "Para crear un gráfico de línea", "Para ordenar un DataFrame", "Para crear un diccionario"],
+    "correcta": 1,
+    "explicacion": "plt.plot(x, y) se usa para crear un gráfico de línea usando los valores de x y de y."
+  }
+]

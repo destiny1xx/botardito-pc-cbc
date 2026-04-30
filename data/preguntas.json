@@ -1,0 +1,332 @@
+[
+    {
+        "pregunta": "¿Qué tipo de dato representa verdadero o falso en Python?",
+        "opciones": ["int", "bool", "str", "float"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué devuelve 10 // 3 en Python?",
+        "opciones": ["3.33", "3", "4", "1"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué operador se usa para comparar igualdad?",
+        "opciones": ["=", "==", "!=", "<>"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué hace input() en Python?",
+        "opciones": ["Imprime datos", "Lee datos del usuario", "Convierte a número", "Crea una lista"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué estructura permite ejecutar código mientras se cumpla una condición?",
+        "opciones": ["for", "if", "while", "def"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué hace la función int()?",
+        "opciones": ["Convierte a entero", "Convierte a string", "Elimina datos", "Ordena listas"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué resultado da 5 % 2?",
+        "opciones": ["2", "1", "3", "0"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Cuál es la salida de print('Hola' + ' Mundo')?",
+        "opciones": ["HolaMundo", "Hola Mundo", "Error", "Hola + Mundo"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué tipo de estructura es una lista?",
+        "opciones": ["Mutable", "Inmutable", "Numérica", "Booleana"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Cómo se define una lista en Python?",
+        "opciones": ["{}", "()", "[]", "<>"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué hace append() en una lista?",
+        "opciones": ["Elimina elementos", "Agrega un elemento", "Ordena la lista", "Cuenta elementos"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué devuelve len([1,2,3,4])?",
+        "opciones": ["3", "4", "5", "Error"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué operador se usa para potencia?",
+        "opciones": ["^", "**", "//", "%"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué hace break dentro de un loop?",
+        "opciones": ["Salta a la siguiente iteración", "Termina el loop", "Reinicia el loop", "No hace nada"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué hace continue dentro de un loop?",
+        "opciones": ["Termina el programa", "Salta a la siguiente iteración", "Elimina el loop", "Duplica el loop"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué tipo de dato es '123'?",
+        "opciones": ["int", "float", "str", "bool"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué devuelve type(True)?",
+        "opciones": ["<class 'int'>", "<class 'bool'>", "<class 'str'>", "<class 'float'>"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué estructura se usa para tomar decisiones?",
+        "opciones": ["for", "while", "if", "def"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué imprime print(2 + 3 * 2)?",
+        "opciones": ["10", "8", "7", "12"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Cuál es el resultado de True and False?",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Cuál es el resultado de True or False?",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué hace not True?",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué devuelve range(3)?",
+        "opciones": ["[1,2,3]", "[0,1,2]", "[0,1,2,3]", "[1,2]"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué hace sorted([3,1,2])?",
+        "opciones": ["[3,1,2]", "[1,2,3]", "[2,1,3]", "Error"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué tipo de dato es None?",
+        "opciones": ["int", "bool", "NoneType", "str"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué hace print(3 == '3')?",
+        "opciones": ["True", "False", "Error", "3"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué devuelve len('Python')?",
+        "opciones": ["5", "6", "7", "Error"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué operador se usa para distinto?",
+        "opciones": ["!=", "==", "=", "<>"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué hace remove() en una lista?",
+        "opciones": ["Agrega un elemento", "Elimina un elemento", "Ordena la lista", "Cuenta elementos"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime print([1,2] * 2)?",
+        "opciones": ["[1,2,1,2]", "[2,4]", "[1,2]", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué tipo de dato NO existe en Python?",
+        "opciones": ["int", "float", "char", "str"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Cuál es el resultado de 2 ** 3 en Python?",
+        "opciones": ["6", "8", "9", "5"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué hace la función len() en Python?",
+        "opciones": ["Convierte a string", "Retorna el largo de un objeto", "Elimina un elemento", "Ordena una lista"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Cuál de estos es un comentario válido en Python?",
+        "opciones": ["// comentario", "/* comentario */", "# comentario", "-- comentario"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué estructura se usa para repetir código un número fijo de veces?",
+        "opciones": ["if", "while", "for", "def"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué palabra clave define una función en Python?",
+        "opciones": ["func", "function", "define", "def"],
+        "correcta": 3
+    },
+    {
+        "pregunta": "¿Cuál es el índice del primer elemento de una lista en Python?",
+        "opciones": ["1", "0", "-1", "Ninguno"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime print(type(3.14))?",
+        "opciones": ["<class 'int'>", "<class 'str'>", "<class 'float'>", "<class 'double'>"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué imprime el siguiente código?\n\nx = 5\nif x > 3:\n    print('A')\nelse:\n    print('B')",
+        "opciones": ["A", "B", "Error", "Nada"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué valor toma x al final?\n\nx = 0\nfor i in range(3):\n    x += i",
+        "opciones": ["3", "2", "1", "0"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime print(10 / 2)?",
+        "opciones": ["5", "5.0", "Error", "2"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime print(10 // 2)?",
+        "opciones": ["5", "5.0", "Error", "2"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué pasa si accedés a lista[10] y no existe ese índice?",
+        "opciones": ["Devuelve None", "Devuelve 0", "Error (IndexError)", "Ignora"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(bool(0))",
+        "opciones": ["True", "False", "Error", "0"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(bool(1))",
+        "opciones": ["True", "False", "Error", "1"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint('3' * 2)",
+        "opciones": ["6", "33", "Error", "3*2"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(3 * '2')",
+        "opciones": ["6", "222", "Error", "32"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué hace este código?\n\nfor i in range(2, 5):\n    print(i)",
+        "opciones": ["Imprime 2,3,4", "Imprime 2,3,4,5", "Imprime 3,4,5", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nx = [1,2,3]\nx.append(4)\nprint(len(x))",
+        "opciones": ["3", "4", "5", "Error"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nx = [1,2,3]\nx.remove(2)\nprint(x)",
+        "opciones": ["[1,3]", "[1,2,3]", "[2,3]", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(type('5' + '5'))",
+        "opciones": ["<class 'int'>", "<class 'str'>", "<class 'float'>", "Error"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(int('5') + int('5'))",
+        "opciones": ["55", "10", "Error", "5"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué ocurre?\n\nprint(5 + '5')",
+        "opciones": ["10", "55", "Error", "5"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nx = [1,2,3]\nprint(x[-1])",
+        "opciones": ["1", "2", "3", "Error"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué hace este código?\n\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1",
+        "opciones": ["Imprime 0,1,2", "Imprime 1,2,3", "Loop infinito", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué pasa si olvidás aumentar x en un while?",
+        "opciones": ["No pasa nada", "Se ejecuta una vez", "Loop infinito", "Error"],
+        "correcta": 2
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(3 > 2 and 2 > 1)",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(3 > 2 or 2 > 5)",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint(not (3 > 2))",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nx = [1,2,3]\ny = x\ny.append(4)\nprint(x)",
+        "opciones": ["[1,2,3]", "[1,2,3,4]", "[4]", "Error"],
+        "correcta": 1
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nx = [1,2,3]\ny = x.copy()\ny.append(4)\nprint(x)",
+        "opciones": ["[1,2,3]", "[1,2,3,4]", "[4]", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué hace range(1,5)?",
+        "opciones": ["1,2,3,4", "1,2,3,4,5", "0,1,2,3,4", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nfor i in range(3):\n    print(i * 2)",
+        "opciones": ["0,2,4", "2,4,6", "1,2,3", "Error"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué devuelve len([])?",
+        "opciones": ["0", "1", "Error", "None"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint([] == [])",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 0
+    },
+    {
+        "pregunta": "¿Qué imprime?\n\nprint([] is [])",
+        "opciones": ["True", "False", "Error", "None"],
+        "correcta": 1
+    }
+]
