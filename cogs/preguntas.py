@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
+import asyncio
 import aiohttp
 import os
 
@@ -48,29 +49,60 @@ class Preguntas(commands.Cog):
 
     async def _consultar_groq(self, user_id: int, pregunta: str) -> str:
         groq_key = os.getenv("GROQ_API_KEY")
+
+        if not groq_key:
+            "❌ Falta configurar la API key de Groq. Revisá el archivo `.env`."
+
         self._agregar_mensaje(user_id, "user", pregunta)
 
-        async with aiohttp.ClientSession() as session:
-            async with session.post(
-                "https://api.groq.com/openai/v1/chat/completions",
-                headers={
-                    "Authorization": f"Bearer {groq_key}",
-                    "Content-Type": "application/json",
-                },
-                json={
-                    "model": "llama-3.3-70b-versatile",
-                    "max_tokens": 300,
-                    "messages": [
-                        {"role": "system", "content": SYSTEM_PROMPT},
-                        *self._get_historial(user_id)
-                    ]
-                }
-            ) as resp:
-                data = await resp.json()
+        try:
+            timeout = aiohttp.ClientTimeout(total=20)
+            async with aiohttp.ClientSession(timeout=timeout) as session:
+                async with session.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers={
+                        "Authorization": f"Bearer {groq_key}",
+                        "Content-Type": "application/json",
+                    },
+                    json={
+                        "model": "llama-3.3-70b-versatile",
+                        "max_tokens": 300,
+                        "messages": [
+                            {"role": "system", "content": SYSTEM_PROMPT},
+                            *self._get_historial(user_id),
+                            ],
+                        },
+                    ) as resp:
+                    data = await resp.json()
+                    if resp.status != 200:
+                        print(f"Error Groq {resp.status}: {data}")
 
-        respuesta = data["choices"][0]["message"]["content"]
-        self._agregar_mensaje(user_id, "assistant", respuesta)
-        return respuesta
+                        if resp.status == 401:
+                            return "❌ La API key de Groq no es válida o no está autorizada."
+
+                        if resp.status == 429:
+                            return "⏳ Botardito recibió muchas consultas seguidas. Probá de nuevo en unos segundos."
+
+                        return "❌ No pude conectarme bien con Groq. Probá de nuevo más tarde."
+                    
+            respuesta = data["choices"][0]["message"]["content"]
+            self._agregar_mensaje(user_id, "assistant", respuesta)
+            return respuesta
+
+        except aiohttp.ClientError as error:
+            print(f"Error de conexión con Groq: {error}")
+            return "❌ Hubo un problema de conexión. Probá de nuevo en unos segundos."
+        
+        except KeyError as error:
+            print(f"Respuesta inesperada de Groq: {error}")
+            return "❌ Groq respondió con un formato inesperado. Probá de nuevo."
+
+        except asyncio.TimeoutError:
+            return "⏳ La consulta tardó demasiado. Probá de nuevo con una pregunta más corta."
+
+        except Exception as error:
+            print(f"Error inesperado en _consultar_groq: {error}")
+            return "❌ Ocurrió un error inesperado. Probá de nuevo más tarde."
 
 
     @app_commands.command(name="preguntarle", description="Hacele una pregunta a Botardito")

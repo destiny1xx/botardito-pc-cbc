@@ -228,15 +228,15 @@ class Academico(commands.Cog):
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-    @app_commands.command(name="temario", description="Cronograma semana a semana de tu curso")
-    async def temario(self, interaction: discord.Interaction):
+    @app_commands.command(name="calendario", description="Calendario semana a semana de tu curso")
+    async def calendario(self, interaction: discord.Interaction):
         nombre_curso, data = get_curso(interaction.user)
         if not data:
             await interaction.response.send_message(embed=self._sin_curso(), ephemeral=True)
             return
 
         embed = discord.Embed(
-            title=f"📖 Temario — {nombre_curso.upper()}",
+            title=f"📖 Calendario — {nombre_curso.upper()}",
             description=f"Día de práctica: **{data['dia']}**",
             color=discord.Color.purple()
         )
